@@ -1,0 +1,101 @@
+* {
+    font-family: sans-serif;
+    color: #333;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    margin: 0px;
+    margin-bottom: 1em;
+}
+
+.container {
+    height: 75vh;
+    width: 40vw;
+    background-color: #e1e1e150;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+
+.todosContainer {
+    overflow: scroll;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1em;
+}
+
+.form input, .form button {
+    height: 50px;
+}
+
+.form input {
+    width: 20vw;
+    margin-right: 1em;
+    font-size: 1.1em;
+}
+
+.form button {
+    background-color: #ccc;
+    border: 0;
+    border-radius: 5px;
+    padding: 0px 1em;
+    font-size: 1.25em;
+    color: #666;
+}
+
+.todo {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 1em;
+    border-left: 3px solid black;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.todo.active {
+    background-color: #F1F9FC;
+    border-color: #5BC1DE;
+}
+
+.todo.active i {
+    color: #5BC1DE;
+    transition: 0.5s ease opacity;
+    opacity: 0;
+}
+
+.todo.active:hover i {
+    color: #5BC1DE;
+    opacity: 1;
+} 
+
+.todo.inactive {
+    background-color: #EEF7EA;
+    border-color: #669900;
+}
+
+.todo.inactive p {
+    text-decoration: line-through;
+}
+
+.todo.inactive i {
+   color: #669900;
+}
